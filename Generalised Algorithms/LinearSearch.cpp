@@ -15,8 +15,8 @@ int linearSearch(DataType *array, int size, DataType x){
 
 int main(void){
 
-    char x;
-    char array[Size] = {'A', 'G', 'H', 'J', 'C'};
+    DataType x;
+    DataType array[Size] = {'A', 'G', 'H', 'J', 'C'};
     
     cout << "type in which element you want to find: " << endl;
     cin >> x;
