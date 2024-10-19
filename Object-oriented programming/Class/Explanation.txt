@@ -1,14 +1,14 @@
 mutable:
-A palavra-chave mutable permite que um membro de uma classe seja modificado, mesmo que o método que o acessa seja const. Normalmente, em um método const, 
-todos os membros da classe devem ser imutáveis (não modificáveis), mas mutable cria uma exceção a essa regra.
-No código, a variável count é marcada como mutable, o que significa que, mesmo em métodos marcados como const, ela poderá ser modificada.
+The mutable keyword allows a member of a class to be modified, even if the method accessing it is const. Normally, in a const. method, 
+all members of the class should be immutable (not modifiable), but mutable creates an exception to this rule.
+In the code, the variable count is marked as mutable, which means that even in methods marked as const, it can be modified.
 
-2. const:
-A palavra-chave const é usada para indicar que algo não pode ser modificado. No caso de métodos, como o método show(),
-isso significa que o método não pode alterar os membros da instância em que foi chamado (exceto para os membros mutable, como já vimos).
-O uso de const também garante que um método possa ser chamado em objetos const, ou seja, que foram declarados como constantes.
+const:
+The const keyword is used to indicate that something cannot be modified. In the case of methods, such as the show() method,
+method, this means that the method cannot change the members of the instance it was called on (except for mutable members, as we've already seen).
+The use of const also ensures that a method can be called on const objects, i.e. objects that have been declared as constants.
 
 static:
-A palavra-chave static em C++ indica que a variável ou função pertence à classe e não a uma instância específica.
-Isso significa que o valor da variável static é compartilhado entre todas as instâncias da classe, e não individual para cada instância.
-No código, howmany é uma variável static, o que faz com que todas as instâncias de Date compartilhem o mesmo valor de howmany. Isso é útil, por exemplo, para contar quantas instâncias de Date existem
+The keyword static in C++ indicates that the variable or function belongs to the class and not to a specific instance.
+This means that the value of the static variable is shared between all instances of the class, and not individual to each instance.
+In the code, howmany is a static variable, which means that all instances of Date share the same value of howmany. This is useful, for example, to count how many instances of Date there are
