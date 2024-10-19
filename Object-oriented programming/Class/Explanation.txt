@@ -1,0 +1,14 @@
+mutable:
+A palavra-chave mutable permite que um membro de uma classe seja modificado, mesmo que o método que o acessa seja const. Normalmente, em um método const, 
+todos os membros da classe devem ser imutáveis (não modificáveis), mas mutable cria uma exceção a essa regra.
+No código, a variável count é marcada como mutable, o que significa que, mesmo em métodos marcados como const, ela poderá ser modificada.
+
+2. const:
+A palavra-chave const é usada para indicar que algo não pode ser modificado. No caso de métodos, como o método show(),
+isso significa que o método não pode alterar os membros da instância em que foi chamado (exceto para os membros mutable, como já vimos).
+O uso de const também garante que um método possa ser chamado em objetos const, ou seja, que foram declarados como constantes.
+
+static:
+A palavra-chave static em C++ indica que a variável ou função pertence à classe e não a uma instância específica.
+Isso significa que o valor da variável static é compartilhado entre todas as instâncias da classe, e não individual para cada instância.
+No código, howmany é uma variável static, o que faz com que todas as instâncias de Date compartilhem o mesmo valor de howmany. Isso é útil, por exemplo, para contar quantas instâncias de Date existem
