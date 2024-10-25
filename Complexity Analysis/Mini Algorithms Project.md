@@ -120,7 +120,7 @@ print(deltaY/deltaX)
 ### $$\gamma =\log(\alpha) + \log(x^{b})$$
 ### $$\gamma =\log(\alpha)+ b*\log(x)$$
 
-### This gives us a linear equation
+### This gives us a linear equation, da forma: $$ Y = b*x + c $$
 
 
 
