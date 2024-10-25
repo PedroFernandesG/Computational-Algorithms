@@ -108,3 +108,5 @@ print(deltaY/deltaX)
 
 ```
 ![image](https://github.com/user-attachments/assets/39d4c6c8-70e6-4675-84ee-b2390d3cb727)
+
+### Let's say that now the interesting part begins, let's think that we can approximate the cost function to a quadratic function, but what if we want to determine the coefficients a and b of the cost function f(n) = a*x^b, how can we do that? the answer can be obtained using machine learning algorithms, let's use a linear regression to solve this problem, let's unite our knowledge of algorithms and learning to arrive at an answer, first let's infer and mathematically demonstrate the linear regression equations for this problem
