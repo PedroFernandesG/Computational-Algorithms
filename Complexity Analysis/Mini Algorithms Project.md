@@ -107,3 +107,4 @@ print(deltaY/deltaX)
 # We see that the slope of the line is approximately 2, which means that the cost function can be considered a quadratic function
 
 ```
+![image](https://github.com/user-attachments/assets/39d4c6c8-70e6-4675-84ee-b2390d3cb727)
