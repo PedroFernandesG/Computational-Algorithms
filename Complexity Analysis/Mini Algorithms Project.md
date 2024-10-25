@@ -122,5 +122,7 @@ print(deltaY/deltaX)
 
 ### This gives us a linear equation, da forma: $$Y = b*x + c$$
 
+### Our idea here is to use the Gauss least squares method to calculate the quadratic error between the transformed points, let's minimise the error function
+
 
 
