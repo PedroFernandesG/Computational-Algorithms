@@ -24,3 +24,14 @@ def function():
         qtd.append(count)
     return qtd
 ```
+### We see that the output when comparing two equal vectors (we want the worst case) of sizes 10, 20,...60 is as follows
+
+ _____________________
+|size  | instructions |
+| 10   |     222      |
+| 20   |     842      |
+| 30   |     1862     |
+| 40   |     3282     |
+| 50   |     5102     |
+| 60   |     7322     |
+ _____________________
