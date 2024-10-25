@@ -115,7 +115,8 @@ print(deltaY/deltaX)
 
 ### Let's transform it into a linear function using logarithms 
 
-### $$\gamma =\log(\alpha) * \log(x^{b})$$
+### $$\gamma =\log(\alpha* x^{b})$$
+### $$\gamma =\log(\alpha) + \log(x^{b})$$
 
 
 
