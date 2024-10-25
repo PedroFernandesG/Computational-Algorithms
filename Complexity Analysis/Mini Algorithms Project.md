@@ -127,5 +127,12 @@ print(deltaY/deltaX)
 ### $$E_{i} = Y_{i} - (b *X_{i} + c)$$
 ### $$S = \sum_{i = 1}^{n} (Y_{i} - (b *X_{i} + c))^{2}$$
 
+### We see that the function depends on the coefficients b and c, from multivariable calculus we know that to minimise the function we need to take its partial derivatives and equal them to zero.
+
+### $$\frac{\partial S}{\partial b} = \sum_{i = 1}^{n}2*(Y_{i} - (b *X_{i} + c))*\frac{\partial }{\partial b}(Y_{i} - (b *X_{i} + c))$$
+### $$\frac{\partial S}{\partial b} = -2\sum_{i = 1}^{n}X_{i}*(Y_{i} - (b *X_{i} + c))$$
+
+
+
 
 
