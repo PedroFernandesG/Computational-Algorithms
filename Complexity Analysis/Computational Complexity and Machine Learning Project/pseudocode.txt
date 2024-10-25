@@ -1,0 +1,22 @@
+def function():
+    qtd = []
+    numberItem = [10,20,30,40,50,60]
+    
+    for n in numberItem:
+        count = 0
+        list1 = range(n)
+        list2 = range(n)
+        find = False
+        
+        count +=1
+        for i in range(n):
+            count+=1
+            for j in range(n):
+                count+=1
+                count+=1
+                if(list1[i] == list2[j]):
+                    find=True
+            count+=1
+        count+=1
+        qtd.append(count)
+    return qtd
