@@ -113,7 +113,7 @@ print(deltaY/deltaX)
 
 ### Firstly, our cost function is of the form: $\gamma = \alpha * x^{b}$
 
-###Let's transform it into a linear function using logarithms 
+### Let's transform it into a linear function using logarithms 
 
 ### $$\gamma =\log(\alpha) * \log(x^{b})$$
 
