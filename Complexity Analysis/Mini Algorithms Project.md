@@ -153,6 +153,25 @@ print(deltaY/deltaX)
 ### 1. $`\sum_{i = 1}^{n}X_{i} *Y_{i} = b*\sum_{i =1}^{n}X_{i}^{2} + c\sum_{i=1}^{n}X_{i}`$
 ### 2. $$\sum_{n =1}^{n}Y_{i} = b*\sum_{i=1}^{n}X_{i} + n*c$$
 
+## From (2)
+
+### $$\sum_{n =1}^{n}Y_{i} = b*\sum_{i=1}^{n}X_{i} + n*c$$
+
+### $$\sum_{n =1}^{n}Y_{i} - b*\sum_{i=1}^{n}X_{i} =  n*c$$
+
+### 3. $$c =\frac{ \sum_{n =1}^{n}Y_{i} - b*\sum_{i=1}^{n}X_{i}}{n}$$
+
+## (3) in (2)
+
+### $`\sum_{i = 1}^{n}X_{i} *Y_{i} = b*\sum_{i =1}^{n}X_{i}^{2} + (\frac{ \sum_{n =1}^{n}Y_{i} - b*\sum_{i=1}^{n}X_{i}}{n})*\sum_{i=1}^{n}X_{i}`$
+
+### $`\sum_{i = 1}^{n}X_{i} *Y_{i} = b*\sum_{i =1}^{n}X_{i}^{2} + \frac{1}{n}(\sum_{i = 1}^{n}Y_{i}*\sum_{i = 1}^{n}X_{i} - b*(\sum_{i = 1}^{n}X_{i})^{2})`$
+
+### $`b*\sum_{i=1}^{n} - \frac{b}{n}*(\sum_{i=1}^{n}X_{i})^{2} = \sum_{i=1}^{n}(X_{i}*Y_{i}) - \frac{1}{n}\sum_{i=1}^{n}Y_{i}*\sum_{i=1}^{n}X_{i}`$
+
+### $`b = \frac{n*\sum_{i=1}^{n}(X_{i}*Y_{i}) - \sum_{i=1}^{n}Y_{i}*\sum_{i=1}^{n}X_{i}}{n*\sum_{i=1}^{n}X_{i}^{2} -(\sum_{i=1}^{n}X_{i})^{2}}`$
+
+
 
 
 
