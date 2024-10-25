@@ -124,5 +124,8 @@ print(deltaY/deltaX)
 
 ### Our idea here is to use the Gauss least squares method to calculate the quadratic error between the transformed points, let's minimise the error function
 
+### $$E_{i} = Y_{i} - (b *X_{i} + c)$$
+### $$S = \sum_{i = 1}^{n} (Y_{i} - (b *X_{i} + c))^{2}$$
+
 
 
