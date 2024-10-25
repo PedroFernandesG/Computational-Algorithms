@@ -1,4 +1,4 @@
-### Let's now use the scientific method to mathematically model our cost function our algorithm receives two vectors and compares how many equal elements there are between the positions of the vectors in the algorithm below using the scientific combinatorial method we add a count variable to count the instructions carried out in the programme
+## Let's now use the scientific method to mathematically model our cost function our algorithm receives two vectors and compares how many equal elements there are between the positions of the vectors in the algorithm below using the scientific combinatorial method we add a count variable to count the instructions carried out in the programme
 
 ```
 def function():
@@ -79,7 +79,7 @@ int main(void){
     return 0;
 }
 ```
-### From this experiment can we predict the value for n =80? yes we can, because we will use the log-log graph from a certain table, as can be seen below we have a line in the Cartesian plane, we can also see that the slope of the line is approximately 2, so we can infer that our cost function can be approximated by a quadratic function.
+## From this experiment can we predict the value for n =80? yes we can, because we will use the log-log graph from a certain table, as can be seen below we have a line in the Cartesian plane, we can also see that the slope of the line is approximately 2, so we can infer that our cost function can be approximated by a quadratic function.
 
 ``` py
 import matplotlib.pyplot as plt
@@ -109,11 +109,11 @@ print(deltaY/deltaX)
 ```
 ![image](https://github.com/user-attachments/assets/39d4c6c8-70e6-4675-84ee-b2390d3cb727)
 
-### Let's say that now the interesting part begins, let's think that we can approximate the cost function to a quadratic function, but what if we want to determine the coefficients a and b of the cost function f(n) = a*x^b, how can we do that? the answer can be obtained using machine learning algorithms, let's use a linear regression to solve this problem, let's unite our knowledge of algorithms and learning to arrive at an answer, first let's infer and mathematically demonstrate the linear regression equations for this problem
+## Let's say that now the interesting part begins, let's think that we can approximate the cost function to a quadratic function, but what if we want to determine the coefficients a and b of the cost function f(n) = a*x^b, how can we do that? the answer can be obtained using machine learning algorithms, let's use a linear regression to solve this problem, let's unite our knowledge of algorithms and learning to arrive at an answer, first let's infer and mathematically demonstrate the linear regression equations for this problem
 
-### Firstly, our cost function is of the form: $\gamma = \alpha * x^{b}$
+## Firstly, our cost function is of the form: $\gamma = \alpha * x^{b}$
 
-### Let's transform it into a linear function using logarithms 
+## Let's transform it into a linear function using logarithms 
 
 ### $$\gamma =\log(\alpha* x^{b})$$
 ### $$\gamma =\log(\alpha) + \log(x^{b})$$
@@ -122,15 +122,38 @@ print(deltaY/deltaX)
 
 ### This gives us a linear equation, da forma: $$Y = b*x + c$$
 
-### Our idea here is to use the Gauss least squares method to calculate the quadratic error between the transformed points, let's minimise the error function
+## Our idea here is to use the Gauss least squares method to calculate the quadratic error between the transformed points, let's minimise the error function
 
 ### $$E_{i} = Y_{i} - (b *X_{i} + c)$$
 ### $$S = \sum_{i = 1}^{n} (Y_{i} - (b *X_{i} + c))^{2}$$
 
-### We see that the function depends on the coefficients b and c, from multivariable calculus we know that to minimise the function we need to take its partial derivatives and equal them to zero.
+## We see that the function depends on the coefficients b and c, from multivariable calculus we know that to minimise the function we need to take its partial derivatives and equal them to zero.
 
-### $$\frac{\partial S}{\partial b} = \sum_{i = 1}^{n}2*(Y_{i} - (b *X_{i} + c))*\frac{\partial }{\partial b}(Y_{i} - (b *X_{i} + c))$$
+
+### $`\frac{\partial S}{\partial b} = \sum_{i = 1}^{n}2*(Y_{i} - (b *X_{i} + c))*\frac{\partial }{\partial b}(Y_{i} - (b *X_{i} + c))`$
+
 ### $$\frac{\partial S}{\partial b} = -2\sum_{i = 1}^{n}X_{i}*(Y_{i} - (b *X_{i} + c))$$
+
+### $$-2\sum_{i = 1}^{n}X_{i}*(Y_{i} - (b *X_{i} + c)) = 0$$
+
+### $`\sum_{i = 1}^{n}X_{i} *Y_{i} = b*\sum_{i =1}^{n}X_{i}^{2} + c\sum_{i=1}^{n}X_{i}`$
+
+## Now for another variable
+
+### $`\frac{\partial S}{\partial c} = \sum_{i = 1}^{n}2*(Y_{i} - (b *X_{i} + c))*\frac{\partial }{\partial c}(Y_{i} - (b *X_{i} + c))`$
+
+### $$\frac{\partial S}{\partial c} = -2\sum_{i = 1}^{n}(Y_{i} - (b *X_{i} + c))$$
+
+### $$-2\sum_{i = 1}^{n}(Y_{i} - (b *X_{i} + c)) = 0$$
+
+### $$\sum_{n =1}^{n}Y_{i} = b*\sum_{i=1}^{n}X_{i} + n*c$$
+
+## We need to isolate b and c, we have a system of two equations
+
+### 1. $`\sum_{i = 1}^{n}X_{i} *Y_{i} = b*\sum_{i =1}^{n}X_{i}^{2} + c\sum_{i=1}^{n}X_{i}`$
+### 2. $$\sum_{n =1}^{n}Y_{i} = b*\sum_{i=1}^{n}X_{i} + n*c$$
+
+
 
 
 
