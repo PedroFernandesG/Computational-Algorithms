@@ -214,7 +214,17 @@ int main(void){
 }
 
 ```
-### O intercepto C que encontramos com a regressão linear é ln(a), ou seja, o logaritmo natural do coeficiente a original do modelo. Como nosso objetivo é retornar ao espaço original (não logarítmico), precisamos "desfazer" o logaritmo aplicando a exponencial: a = exp(C)
+### The intercept C that we find with linear regression is ln(a), i.e. the natural logarithm of the model's original a coefficient. As our aim is to return to the original (non-logarithmic) space, we need to ‘undo’ the logarithm by applying the exponential: a = exp(C)
+
+### $$b = \frac{n\sum_{}^{}(log(x)*log(y)) - \sum_{}^{}log(x) *\sum_{}^{}log(y)}{n\sum_{}^{} log(x)^{2} - (\sum_{}^{}log(x))^{2}}$$
+
+### $$intercept = \frac{\sum_{}^{}log(y) - b\sum_{}^{}log(x)}{n}$$
+
+### $$a = exp(intercept)$$
+
+## So running the algorithm we get our cost function: $$f(n) = 2.46  * n^{1.95}$$
+
+### we can use it to get good approximations of the number of instructions the programme will carry out knowing the size of the input (in the worst case).
 
 
 
