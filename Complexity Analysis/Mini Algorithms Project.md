@@ -19,8 +19,8 @@ def function():
                 count+=1
                 if(list1[i] == list2[j]):
                     find=True
-            count+=1 #para o ultimo for
-        count+=1 #para o primeiro for
+            count+=1
+        count+=1
         qtd.append(count)
     return qtd
 ```
