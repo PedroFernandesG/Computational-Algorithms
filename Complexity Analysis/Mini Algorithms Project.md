@@ -117,6 +117,8 @@ print(deltaY/deltaX)
 
 ### $$\gamma =\log(\alpha* x^{b})$$
 ### $$\gamma =\log(\alpha) + \log(x^{b})$$
+### $$\gamma =\log(\alpha) + \log(x^{b})$$
+### $$\gamma =\log(\alpha)+ b\log(x)$$
 
 
 
