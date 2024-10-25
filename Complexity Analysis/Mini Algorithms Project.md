@@ -27,7 +27,7 @@ def function():
 ### We see that the output when comparing two equal vectors (we want the worst case) of sizes 10, 20,...60 is as follows
 
 
-|size  | instructions |
+|Size  | Instructions |
 |------|--------------|
 | 10   |     222      |
 | 20   |     842      |
